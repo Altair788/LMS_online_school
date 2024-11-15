@@ -7,6 +7,9 @@ NULLABLE = {"blank": True, "null": True}
 
 
 class Course(models.Model):
+    """
+    Представляет класс Курс
+    """
     title = models.CharField(
         max_length=150,
         unique=True,
@@ -43,6 +46,9 @@ class Course(models.Model):
 
 
 class Lesson(models.Model):
+    """
+    Представляет класс Урок
+    """
     title = models.CharField(
         max_length=150,
         verbose_name="название урока",
@@ -93,6 +99,9 @@ class Lesson(models.Model):
 
 
 class Subscription(models.Model):
+    """
+    Представляет класс Подписка
+    """
     user = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
