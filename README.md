@@ -25,8 +25,8 @@
 
 1. Клонируйте репозиторий:
    ```bash
-   git clone <https://github.com/Altair788/hw_24.1.git>
-   cd <название папки>
+   git clone <https://github.com/Altair788/LMS_online_school.git>
+   cd <LMS_online_school>
    ```
 
 2. Установите Poetry, если он еще не установлен:
@@ -48,12 +48,12 @@
 
 6. Запустите Celery worker:
    ```bash
-   poetry run celery -A <имя_проекта> worker --loglevel=info
+   poetry run celery -A config worker --loglevel=info
    ```
 
 7. Запустите celery-beat для периодических задач:
    ```bash
-   poetry run celery -A <имя_проекта> beat --loglevel=info
+   poetry run celery -A config beat --loglevel=info
    ```
 
 ## Тестирование
