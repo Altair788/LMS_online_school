@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "hw24-1"
+name = "lms_online_school"
 version = "0.1.0"
 description = ""
 authors = ["Eduard Slobodyanik <slobodyanik.ed@gmail.com>"]
